@@ -62,6 +62,13 @@
             bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
         };
+
+        kakko: kakko {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp LEFT_ARROW>;
+            label = "KAKKO";
+        };
     };
 
     behaviors {
@@ -110,7 +117,7 @@
         ARROW {
             bindings = <
 &none   &kp LEFT_BRACKET      &kp DOUBLE_QUOTES  &kp RIGHT_BRACKET      &trans                          &trans    &none                   &kp UP_ARROW    &none                    &trans
-&none   &kp LEFT_PARENTHESIS  &trans             &kp RIGHT_PARENTHESIS  &trans  &kp F7       &kp LC(W)  &kp HOME  &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END
+&none   &kp LEFT_PARENTHESIS  &kakko             &kp RIGHT_PARENTHESIS  &trans  &kp F7       &kp LC(W)  &kp HOME  &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END
 &none   &kp LBRC              &kp SEMI           &kp RIGHT_BRACE        &trans  &kp F10      &kp LC(R)  &trans    &kp LC(LG(LEFT_ARROW))  &kp LG(TAB)     &kp LC(LG(RIGHT_ARROW))  &trans
 &trans  &trans                &trans             &trans                 &trans  &trans       &trans     &trans                                                                     &trans
             >;
