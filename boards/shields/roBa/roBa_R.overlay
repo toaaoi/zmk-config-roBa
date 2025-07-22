@@ -59,3 +59,59 @@
         irq-gpios = <&gpio0 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
     };
 };
+
+#include <input/processors.dtsi>
+
+&zip_temp_layer {
+    excluded-positions = <
+39 // mb1
+38 // leyer5
+37 // mb2
+26 // Space
+25 // lalt
+24 // lshift
+16 // ^v
+28 // ^c
+30 // mb4
+31 // ^w
+32 // mb5
+18 // j
+19 // k
+20 // l
+7 // shift ^t
+
+    >;
+};
+
+/ {
+    trackball_listener {
+        compatible = "zmk,input-listener";
+        device = <&trackball>;
+
+        input-processors = <&zip_temp_layer 4 10000>;
+    };
+};
+
+/ {
+    trackball_listener {
+        compatible = "zmk,input-listener";
+        device = <&trackball>;
+
+        input-processors = <&zip_temp_layer 4 100000>;
+    };
+};
+
+#include <input/processors.dtsi>
+
+&zip_temp_layer {
+    require-prior-idle-ms = <200>;
+};
+
+/ {
+    trackball_listener {
+        compatible = "zmk,input-listener";
+        device = <&trackball>;
+
+        input-processors = <&zip_temp_layer 4 10000>;
+    };
+};
