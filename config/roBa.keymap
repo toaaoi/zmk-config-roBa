@@ -19,7 +19,6 @@
     //         <&kp LEFT_ARROW>,
     //         <&kp UP_ARROW>,
     //         <&kp DOWN_ARROW>;
-
     //     tick = <10>;
     //     wait-ms = <5>;
     //     tap-ms = <5>;
@@ -111,7 +110,7 @@
         ARROW {
             bindings = <
 &none   &kp LEFT_BRACKET      &kp DOUBLE_QUOTES  &kp RIGHT_BRACKET      &trans                          &trans    &none                   &kp UP_ARROW    &none                    &trans
-&none   &kp LEFT_PARENTHESIS  &kakko             &kp RIGHT_PARENTHESIS  &trans  &kp F7       &kp LC(W)  &kp HOME  &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END
+&none   &kp LEFT_PARENTHESIS  &trans             &kp RIGHT_PARENTHESIS  &trans  &kp F7       &kp LC(W)  &kp HOME  &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END
 &none   &kp LBRC              &kp SEMI           &kp RIGHT_BRACE        &trans  &kp F10      &kp LC(R)  &trans    &kp LC(LG(LEFT_ARROW))  &kp LG(TAB)     &kp LC(LG(RIGHT_ARROW))  &trans
 &trans  &trans                &trans             &trans                 &trans  &trans       &trans     &trans                                                                     &trans
             >;
@@ -121,10 +120,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans          &trans        &trans                              &trans  &trans    &kp LC(LS(T))  &trans    &trans
-&trans  &trans  &trans          &trans        &trans     &mkp MB5      &kp LC(V)  &trans  &mkp MB1  &mkp MB3       &mkp MB2  &trans
-&trans  &trans  &kp LEFT_SHIFT  &kp LEFT_ALT  &kp SPACE  &mkp MB4      &kp LC(C)  &trans  &mkp MB4  &kp LC(W)      &mkp MB5  &trans
-&trans  &trans  &trans          &mkp MB2      &mo 5      &mkp MB1      &trans     &trans                                     &trans
+&trans  &trans  &trans  &trans  &trans                         &trans  &trans    &kp LC(LS(T))  &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &kp LC(V)  &trans  &mkp MB1  &mkp MB3       &mkp MB2  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &kp LC(C)  &trans  &mkp MB4  &kp LC(W)      &mkp MB5  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans     &trans                                     &trans
             >;
         };
 
@@ -147,4 +146,3 @@
         };
     };
 };
-
