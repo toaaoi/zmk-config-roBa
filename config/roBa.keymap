@@ -69,6 +69,13 @@
             bindings = <&kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp LEFT_ARROW>;
             label = "KAKKO";
         };
+
+        saves: saves {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(N) &kp E &kp N5 &kp O &kp N2 &kp L &kp N4 &kp D>;
+            label = "SAVES";
+        };
     };
 
     behaviors {
@@ -87,10 +94,10 @@
 
         default_layer {
             bindings = <
-&kp Q                 &kp W             &kp E         &kp R  &kp T                                               &kp Y      &kp U  &kp I      &kp O    &kp P
-&kp A                 &kp S             &kp D         &kp F  &kp G      &kp ESC        &kp DELETE                &kp H      &kp J  &kp K      &kp L    &kp ENTER
-&kp Z                 &kp X             &kp C         &kp V  &kp B      &kp TAB        &kp LEFT_GUI              &kp N      &kp M  &kp COMMA  &kp DOT  &kp MINUS
-&mt LEFT_SHIFT EQUAL  &kp LEFT_CONTROL  &kp LEFT_ALT  &mo 5  &lt 1 F13  &kp SPACE      &mt LEFT_SHIFT BACKSPACE  &lt 3 F14                             &lt 5 BACKSPACE
+&kp Q                 &kp W             &kp E         &kp R  &kp T                                             &kp Y      &kp U  &kp I      &kp O    &kp P
+&kp A                 &kp S             &kp D         &kp F  &kp G      &kp ESC          &kp BACKSPACE         &kp H      &kp J  &kp K      &kp L    &kp ENTER
+&kp Z                 &kp X             &kp C         &kp V  &kp B      &kp TAB          &mt LEFT_GUI SLASH    &kp N      &kp M  &kp COMMA  &kp DOT  &kp MINUS
+&mt LEFT_SHIFT EQUAL  &kp LEFT_CONTROL  &kp LEFT_ALT  &mo 5  &lt 1 F13  &lt 4 SPACE      &mt LEFT_SHIFT SPACE  &lt 3 F14                             &mo 4
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -116,10 +123,10 @@
 
         ARROW {
             bindings = <
-&none   &kp LEFT_BRACKET      &kp DOUBLE_QUOTES  &kp RIGHT_BRACKET      &trans                          &trans    &none                   &kp UP_ARROW    &none                    &trans
-&none   &kp LEFT_PARENTHESIS  &kakko             &kp RIGHT_PARENTHESIS  &trans  &kp F7       &kp LC(W)  &kp HOME  &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END
-&none   &kp LBRC              &kp SEMI           &kp RIGHT_BRACE        &trans  &kp F10      &kp LC(R)  &trans    &kp LC(LG(LEFT_ARROW))  &kp LG(TAB)     &kp LC(LG(RIGHT_ARROW))  &trans
-&trans  &trans                &trans             &trans                 &trans  &trans       &trans     &trans                                                                     &trans
+&none   &kp LEFT_BRACKET      &kp DOUBLE_QUOTES  &kp RIGHT_BRACKET      &trans                              &saves    &none                   &kp UP_ARROW    &none                    &kp LC(W)
+&none   &kp LEFT_PARENTHESIS  &kakko             &kp RIGHT_PARENTHESIS  &trans  &kp F7       &kp DEL        &kp HOME  &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END
+&none   &kp LBRC              &kp SEMI           &kp RIGHT_BRACE        &trans  &kp F10      &kp LC(LS(T))  &trans    &kp LC(LG(LEFT_ARROW))  &kp LG(TAB)     &kp LC(LG(RIGHT_ARROW))  &kp LC(R)
+&trans  &trans                &trans             &trans                 &trans  &trans       &trans         &trans                                                                     &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
@@ -127,10 +134,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                             &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &kp LC(W)      &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &kp LS(LC(T))  &trans  &trans    &mkp MB4  &mkp MB5  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans         &trans                                &trans
+&trans  &trans          &trans        &trans     &trans                                &trans    &trans    &trans  &trans    &trans
+&trans  &kp LEFT_SHIFT  &kp LEFT_ALT  &mkp LCLK  &mkp RCLK  &trans      &kp LC(W)      &trans    &mkp MB1  &mo 5   &mkp MB2  &trans
+&trans  &trans          &kp LC(C)     &kp LC(V)  &trans     &trans      &kp LS(LC(T))  &trans    &trans    &trans  &trans    &trans
+&trans  &trans          &trans        &trans     &trans     &trans      &mkp MB4       &mkp MB5                              &trans
             >;
         };
 
@@ -153,5 +160,3 @@
         };
     };
 };
-
-
