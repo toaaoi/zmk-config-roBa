@@ -100,7 +100,7 @@
 &kp Q                 &kp W             &kp E         &kp R  &kp T                                               &kp Y      &kp U  &kp I      &kp O    &kp P
 &kp A                 &kp S             &kp D         &kp F  &kp G      &kp ESC        &kp DELETE                &kp H      &kp J  &kp K      &kp L    &kp ENTER
 &kp Z                 &kp X             &kp C         &kp V  &kp B      &kp TAB        &mt LEFT_GUI SLASH        &kp N      &kp M  &kp COMMA  &kp DOT  &kp MINUS
-&mt LEFT_SHIFT EQUAL  &kp LEFT_CONTROL  &kp LEFT_ALT  &mo 5  &lt 1 F13  &kp SPACE      &mt LEFT_SHIFT BACKSPACE  &lt 3 F14                             &lt 5 LC(C)
+&mt LEFT_SHIFT EQUAL  &kp LEFT_CONTROL  &kp LEFT_ALT  &mo 5  &lt 1 F13  &kp SPACE      &mt LEFT_SHIFT BACKSPACE  &lt 3 F14                             &lt 5 BACKSPACE
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
