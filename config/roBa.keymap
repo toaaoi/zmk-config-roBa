@@ -164,14 +164,7 @@
     };
 };
 
-#include <input/processors.dtsi>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
-
-&trackball_listener { input-processors = <&zip_temp_layer 4 10000>; };
-
-&mkp_input_listener { input-processors = <&zip_temp_layer 4 10000>; };
-
-&mkp_input_listener { input-processors = <&zip_temp_layer 4 250>; };
