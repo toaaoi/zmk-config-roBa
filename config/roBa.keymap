@@ -97,10 +97,10 @@
 
         default_layer {
             bindings = <
-&kp Q           &kp W             &kp E         &kp R  &kp T                                   &kp Y      &kp U  &kp I      &kp O    &kp P
-&kp A           &kp S             &kp D         &kp F  &kp G      &kp ESC        &kp DELETE    &kp H      &kp J  &kp K      &kp L    &kp ENTER
-&kp Z           &kp X             &kp C         &kp V  &kp B      &kp TAB        &kp LEFT_GUI  &kp N      &kp M  &kp COMMA  &kp DOT  &kp MINUS
-&kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT  &mo 5  &lt 1 F13  &kp SPACE      &kp SPACE     &lt 3 F14                             &lt 5 SLASH
+&kp Q                 &kp W             &kp E         &kp R  &kp T                                               &kp Y      &kp U  &kp I      &kp O    &kp P
+&kp A                 &kp S             &kp D         &kp F  &kp G      &kp ESC        &kp DELETE                &kp H      &kp J  &kp K      &kp L    &kp ENTER
+&kp Z                 &kp X             &kp C         &kp V  &kp B      &kp TAB        &kp LEFT_GUI              &kp N      &kp M  &kp COMMA  &kp DOT  &kp MINUS
+&mt LEFT_SHIFT EQUAL  &kp LEFT_CONTROL  &kp LEFT_ALT  &mo 5  &lt 1 F13  &kp SPACE      &mt LEFT_SHIFT BACKSPACE  &lt 3 F14                             &lt 5 SLASH
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -137,10 +137,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans            &trans     &trans     &trans                                           &trans  &trans    &trans    &trans    &kp LC(P)
-&trans  &trans            &trans     &trans     &trans          &mkp RCLK         &kp LC(W)      &trans  &mkp MB1  &trans    &mkp MB2  &trans
-&trans  &trans            &kp LC(C)  &kp LC(V)  &kp LEFT_SHIFT  &kp LEFT_ALT      &kp LS(LC(T))  &trans  &trans    &mkp MB4  &mkp MB5  &trans
-&trans  &kp LEFT_CONTROL  &trans     &trans     &trans          &mkp LCLK         &trans         &trans                                &trans
+&trans  &trans            &trans  &trans  &trans                                           &trans  &trans    &trans    &trans    &trans
+&trans  &trans            &trans  &trans  &trans          &mkp RCLK         &kp LC(W)      &trans  &mkp MB1  &trans    &mkp MB2  &trans
+&trans  &trans            &trans  &trans  &kp LEFT_SHIFT  &kp LEFT_ALT      &kp LS(LC(T))  &trans  &trans    &mkp MB4  &mkp MB5  &trans
+&trans  &kp LEFT_CONTROL  &trans  &trans  &trans          &mkp LCLK         &trans         &trans                                &trans
             >;
         };
 
