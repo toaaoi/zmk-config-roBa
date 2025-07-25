@@ -60,4 +60,36 @@
     };
 };
 
+#include <input/processors.dtsi>
 
+&zip_temp_layer {
+    excluded-positions = <
+34
+22
+12
+13
+39
+27
+16
+40
+41
+    >;
+};
+
+/ {
+    trackball_listener {
+        compatible = "zmk,input-listener";
+        device = <&trackball>;
+
+        input-processors = <&zip_temp_layer 4 10000>;
+    };
+};
+
+/ {
+    trackball_listener {
+        compatible = "zmk,input-listener";
+        device = <&trackball>;
+
+        input-processors = <&zip_temp_layer 4 100000>;
+    };
+};
