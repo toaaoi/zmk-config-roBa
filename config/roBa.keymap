@@ -6,7 +6,7 @@
 
 &mkp_input_listener { input-processors = <&zip_temp_layer 4 10000>; };
 
-&mkp_input_listener { input-processors = <&zip_temp_layer 4 500>; };
+&mkp_input_listener { input-processors = <&zip_temp_layer 4 750>; };
 
 &mt {
     flavor = "balanced";
