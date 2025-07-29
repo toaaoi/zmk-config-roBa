@@ -59,34 +59,3 @@
         irq-gpios = <&gpio0 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
     };
 };
-
-#include <input/processors.dtsi>
-
-&zip_temp_layer {
-    excluded-positions = <
-34
-12
-13
-39
-31
-32
-    >;
-};
-
-/ {
-    trackball_listener {
-        compatible = "zmk,input-listener";
-        device = <&trackball>;
-
-        input-processors = <&zip_temp_layer 4 10000>;
-    };
-};
-
-/ {
-    trackball_listener {
-        compatible = "zmk,input-listener";
-        device = <&trackball>;
-
-        input-processors = <&zip_temp_layer 4 100000>;
-    };
-};
