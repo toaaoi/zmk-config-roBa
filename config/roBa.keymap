@@ -115,10 +115,10 @@
 
         default_layer {
             bindings = <
-&kp ESC         &kp LC(W)         &kp LC(E)     &kp LC(R)  &kp LC(T)                                           &kp LC(LEFT_BRACE)      &kp LC(RIGHT_BRACE)      &kp LC(LA(I))  &kp LC(LS(O))  &kp LC(P)
-&kp LC(A)       &kp LC(S)         &kp LC(D)     &kp LC(F)  &kp LC(G)  &kp LGUI           &kp DEL               &kp LC(K)               &kp LC(J)                &mkp MB4       &mkp MB5       &kp ENTER
-&kp LC(Z)       &kp LC(X)         &kp LC(C)     &kp LC(V)  &kp LC(B)  &kp BACKSPACE      &move_corsor          &kp LG(LC(LEFT_ARROW))  &kp LC(LG(RIGHT_ARROW))  &mkp MB1       &mkp MB2       &kp LEFT_ALT
-&kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT  &mkp LCLK  &lt 1 F13  &mo 5              &mt LEFT_SHIFT SPACE  &lt 3 F14                                                                      &mt RCTRL BACKSPACE
+&kp Q      &kp W     &kp E         &kp R            &kp T                                           &kp Y      &kp U  &kp I      &kp O    &kp P
+&kp A      &kp S     &kp D         &kp F            &kp G      &kp ESC        &kp DEL               &kp H      &kp J  &kp K      &kp L    &kp ENTER
+&kp Z      &kp X     &kp C         &kp V            &kp B      &kp TAB        &move_corsor          &kp N      &kp M  &kp COMMA  &kp DOT  &mt LEFT_SHIFT MINUS
+&kp LCTRL  &kp LGUI  &kp LEFT_ALT  &lt 5 BACKSPACE  &lt 1 F13  &mkp LCLK      &mt LEFT_SHIFT SPACE  &lt 3 F14                             &mt RCTRL SLASH
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -144,10 +144,10 @@
 
         ARROW {
             bindings = <
-&none   &kp LEFT_BRACKET      &kp DOUBLE_QUOTES  &kp RIGHT_BRACKET      &kp F9                                      &saves    &none                   &kp UP_ARROW    &none                    &kp LC(W)
-&none   &kp LEFT_PARENTHESIS  &kakko             &kp RIGHT_PARENTHESIS  &kp LC(LS(F9))  &kp F7       &kp DEL        &kp HOME  &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END
-&none   &kp LBRC              &kp SEMI           &kp RIGHT_BRACE        &kp LC(LS(K))   &kp F10      &kp LC(LS(T))  &trans    &kp LC(LG(LEFT_ARROW))  &kp LG(TAB)     &kp LC(LG(RIGHT_ARROW))  &kp LC(R)
-&trans  &trans                &trans             &trans                 &trans          &trans       &trans         &trans                                                                     &trans
+&none   &kp LEFT_BRACKET      &kp SQT   &kp RIGHT_BRACKET      &kp F9                                      &saves                  &none                    &kp UP_ARROW    &none            &kp LC(W)
+&none   &kp LEFT_PARENTHESIS  &kakko    &kp RIGHT_PARENTHESIS  &kp LC(LS(F9))  &kp F7       &kp DEL        &kp HOME                &kp LEFT_ARROW           &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END
+&none   &kp LBRC              &kp SEMI  &kp RIGHT_BRACE        &kp LC(LS(K))   &kp F10      &kp LC(LS(T))  &kp LG(LC(LEFT_ARROW))  &kp LC(LG(RIGHT_ARROW))  &kp LG(TAB)     &trans           &kp LC(R)
+&trans  &trans                &trans    &trans                 &trans          &trans       &trans         &trans                                                                            &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
@@ -164,10 +164,10 @@
 
         SCROLL {
             bindings = <
-&kp Q   &kp W   &kp E   &kp R   &kp T                       &kp Y   &kp U  &kp I      &kp O    &kp P
-&kp A   &kp S   &kp D   &kp F   &kp G   &trans      &trans  &kp H   &kp J  &kp K      &kp L    &kp ENTER
-&kp Z   &kp X   &kp C   &kp V   &kp B   &trans      &trans  &kp N   &kp M  &kp COMMA  &kp DOT  &kp MINUS
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                             &kp FSLH
+&kp ESCAPE  &kp LC(W)  &kp LC(E)  &kp LC(R)  &kp LC(T)                                     &kp LC(RIGHT_BRACKET)  &kp LC(LEFT_BRACKET)  &kp LC(LA(I))  &kp LS(LC(O))  &kp LC(P)
+&kp LC(A)   &kp LC(S)  &kp LC(D)  &kp LC(F)  &kp LC(G)  &trans      &kp LA(LEFT_BRACKET)   &trans                 &kp LC(J)             &kp LC(K)      &trans         &kp LS(SPACE)
+&kp LC(Z)   &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(B)  &trans      &kp LA(RIGHT_BRACKET)  &trans                 &trans                &trans         &trans         &trans
+&trans      &trans     &trans     &trans     &trans     &trans      &trans                 &trans                                                                     &trans
             >;
         };
 
