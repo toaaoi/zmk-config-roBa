@@ -116,8 +116,8 @@
         default_layer {
             bindings = <
 &kp Q      &kp W     &kp E         &kp R            &kp T                                           &kp Y      &kp U  &kp I      &kp O    &kp P
-&kp A      &kp S     &kp D         &kp F            &kp G      &kp ESC        &kp DEL               &kp H      &kp J  &kp K      &kp L    &kp ENTER
-&kp Z      &kp X     &kp C         &kp V            &kp B      &kp TAB        &move_corsor          &kp N      &kp M  &kp COMMA  &kp DOT  &mt LEFT_ALT MINUS
+&kp A      &kp S     &kp D         &kp F            &kp G      &kp ESC        &kp DEL               &kp H      &kp J  &kp K      &kp L    &lt 5 ENTER
+&kp Z      &kp X     &kp C         &kp V            &kp B      &mkp RCLK      &move_corsor          &kp N      &kp M  &kp COMMA  &kp DOT  &mt LEFT_ALT MINUS
 &kp LCTRL  &kp LGUI  &kp LEFT_ALT  &lt 5 BACKSPACE  &lt 1 F13  &mkp LCLK      &mt LEFT_SHIFT SPACE  &lt 3 F14                             &mt RCTRL SLASH
             >;
 
@@ -144,10 +144,10 @@
 
         ARROW {
             bindings = <
-&none   &kp LEFT_BRACKET      &kp SQT   &kp RIGHT_BRACKET      &kp F9                                      &saves                  &none                    &kp UP_ARROW    &none            &kp LC(W)
-&none   &kp LEFT_PARENTHESIS  &kakko    &kp RIGHT_PARENTHESIS  &kp LC(LS(F9))  &kp F7       &kp DEL        &kp HOME                &kp LEFT_ARROW           &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END
-&none   &kp LBRC              &kp SEMI  &kp RIGHT_BRACE        &kp LC(LS(K))   &kp F10      &kp LC(LS(T))  &kp LG(LC(LEFT_ARROW))  &kp LC(LG(RIGHT_ARROW))  &kp LG(TAB)     &trans           &kp LC(R)
-&trans  &trans                &trans    &trans                 &trans          &trans       &trans         &trans                                                                            &trans
+&kp DOUBLE_QUOTES  &kp LEFT_BRACKET      &kp SQT    &kp RIGHT_BRACKET      &kp F9                                      &saves                  &none                    &kp UP_ARROW    &none            &kp LC(W)
+&none              &kp LEFT_PARENTHESIS  &kakko     &kp RIGHT_PARENTHESIS  &kp LC(LS(F9))  &kp F7       &kp DEL        &kp HOME                &kp LEFT_ARROW           &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END
+&kp SEMI           &kp LBRC              &kp COLON  &kp RIGHT_BRACE        &kp LC(LS(K))   &kp F10      &kp LC(LS(T))  &kp LG(LC(LEFT_ARROW))  &kp LC(LG(RIGHT_ARROW))  &kp LG(TAB)     &trans           &kp LC(R)
+&trans             &trans                &trans     &trans                 &trans          &trans       &trans         &trans                                                                            &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
