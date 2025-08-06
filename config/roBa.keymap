@@ -115,10 +115,10 @@
 
         default_layer {
             bindings = <
-&kp Q           &kp W         &kp E             &kp R      &kp T                                                        &kp Y      &kp U  &kp I      &kp O    &kp P
-&kp A           &kp S         &kp D             &kp F      &kp G      &kp LA(LEFT_SHIFT)      &kp LEFT_GUI              &kp H      &kp J  &kp K      &kp L    &lt 5 ENTER
-&kp Z           &kp X         &kp C             &kp V      &kp B      &move_corsor            &kp DELETE                &kp N      &kp M  &kp COMMA  &kp DOT  &mt LEFT_ALT MINUS
-&kp LEFT_SHIFT  &kp LEFT_ALT  &kp LEFT_CONTROL  &mkp LCLK  &lt 1 F13  &lt 5 SPACE             &mt LEFT_SHIFT BACKSPACE  &lt 3 F14                             &mt RCTRL SLASH
+&kp Q                     &kp W         &kp E             &kp R         &kp T                                                    &kp Y      &kp U  &kp I      &kp O    &kp P
+&kp A                     &kp S         &kp D             &kp F         &kp G      &kp LA(LEFT_SHIFT)      &kp LEFT_GUI          &kp H      &kp J  &kp K      &kp L    &lt 5 ENTER
+&kp Z                     &kp X         &kp C             &kp V         &kp B      &mkp LCLK               &kp DELETE            &kp N      &kp M  &kp COMMA  &kp DOT  &mt LEFT_ALT MINUS
+&mt LEFT_SHIFT BACKSPACE  &kp LEFT_ALT  &kp LEFT_CONTROL  &move_corsor  &lt 1 F13  &lt 5 SPACE             &mt LEFT_SHIFT SPACE  &lt 3 F14                             &mt RCTRL SLASH
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -164,10 +164,10 @@
 
         SCROLL {
             bindings = <
-&kp ESCAPE  &kp LC(W)  &kp LC(E)  &kp LC(R)  &kp LC(T)                                     &kp LC(RIGHT_BRACKET)  &kp LC(LEFT_BRACKET)  &kp LC(LA(I))  &kp LS(LC(O))  &kp LC(P)
-&kp LC(A)   &kp LC(S)  &kp LC(D)  &kp LC(F)  &kp LC(G)  &trans      &kp LA(LEFT_BRACKET)   &trans                 &kp LC(J)             &kp LC(K)      &trans         &kp LS(SPACE)
-&kp LC(Z)   &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(B)  &trans      &kp LA(RIGHT_BRACKET)  &trans                 &trans                &trans         &trans         &trans
-&trans      &trans     &trans     &mkp RCLK  &trans     &trans      &mkp MB4               &mkp MB5                                                                   &trans
+&kp ESCAPE  &kp LC(W)  &kp LC(E)  &kp LC(R)  &kp LC(T)                                        &kp LC(RIGHT_BRACKET)  &kp LC(LEFT_BRACKET)  &kp LC(LA(I))  &kp LS(LC(O))  &kp LC(P)
+&kp LC(A)   &kp LC(S)  &kp LC(D)  &kp LC(F)  &kp LC(G)  &trans         &kp LA(LEFT_BRACKET)   &trans                 &kp LC(J)             &kp LC(K)      &trans         &kp LS(SPACE)
+&kp LC(Z)   &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(B)  &mkp RCLK      &kp LA(RIGHT_BRACKET)  &trans                 &trans                &trans         &trans         &trans
+&trans      &trans     &trans     &trans     &trans     &trans         &mkp MB4               &mkp MB5                                                                   &trans
             >;
         };
 
