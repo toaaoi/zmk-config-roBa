@@ -115,10 +115,10 @@
 
         default_layer {
             bindings = <
-&kp Q                     &kp W         &kp E             &kp R         &kp T                                                    &kp Y      &kp U  &kp I      &kp O    &kp P
-&kp A                     &kp S         &kp D             &kp F         &kp G      &kp LA(LEFT_SHIFT)      &kp LEFT_GUI          &kp H      &kp J  &kp K      &kp L    &lt 5 ENTER
-&kp Z                     &kp X         &kp C             &kp V         &kp B      &mkp LCLK               &kp DELETE            &kp N      &kp M  &kp COMMA  &kp DOT  &mt LEFT_ALT MINUS
-&mt LEFT_SHIFT BACKSPACE  &kp LEFT_ALT  &kp LEFT_CONTROL  &move_corsor  &lt 1 F13  &lt 5 SPACE             &mt LEFT_SHIFT SPACE  &lt 3 F14                             &mt RCTRL SLASH
+&kp Q           &kp W         &kp E             &kp R         &kp T                                                    &kp Y      &kp U  &kp I      &kp O    &kp P
+&kp A           &kp S         &kp D             &kp F         &kp G      &kp LA(LEFT_SHIFT)      &kp LEFT_GUI          &kp H      &kp J  &kp K      &kp L    &lt 5 ENTER
+&kp Z           &kp X         &kp C             &kp V         &kp B      &mkp LCLK               &kp BACKSPACE         &kp N      &kp M  &kp COMMA  &kp DOT  &kp MINUS
+&kp LEFT_SHIFT  &kp LEFT_ALT  &kp LEFT_CONTROL  &move_corsor  &lt 1 F13  &lt 5 SPACE             &mt LEFT_SHIFT SPACE  &lt 3 F14                             &lt 4 SLASH
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -126,19 +126,19 @@
 
         FUNCTION {
             bindings = <
-&kp ESC     &kp CARET             &kp HASH       &kp AMPERSAND  &kp PRCNT                          &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp MINUS  &kp STAR
-&kp DELETE  &kp DOLLAR            &kp STAR       &kp AT_SIGN    &kp EXCL   &trans      &kp PERIOD  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PLUS   &kp EQUAL
-&none       &kp NON_US_BACKSLASH  &kp LG(LS(T))  &kp LC(F20)    &kp INS    &trans      &kp MINUS   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SLASH  &none
-&trans      &trans                &tog 2         &trans         &trans     &trans      &kp TAB     &kp NUMBER_0                                         &kp BACKSPACE
+&kp ESC     &kp CARET             &kp HASH       &kp AMPERSAND  &kp PRCNT                            &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp MINUS  &kp STAR
+&kp DELETE  &kp DOLLAR            &kp STAR       &kp AT_SIGN    &kp EXCL   &trans      &kp KP_DOT    &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PLUS   &kp EQUAL
+&none       &kp NON_US_BACKSLASH  &kp LG(LS(T))  &kp LC(F20)    &kp INS    &trans      &kp KP_MINUS  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SLASH  &none
+&trans      &trans                &tog 2         &trans         &trans     &trans      &kp TAB       &kp NUMBER_0                                         &kp BACKSPACE
             >;
         };
 
         NUM {
             bindings = <
-&none    &none           &kp UP_ARROW    &none            &none                             &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp MINUS  &kp STAR
-&kp END  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp HOME  &none       &kp PERIOD  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PLUS   &kp ENTER
-&none    &none           &none           &none            &none     &none       &kp MINUS   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SLASH  &none
-&trans   &trans          &tog 2          &trans           &trans    &trans      &kp TAB     &kp NUMBER_0                                         &kp BACKSPACE
+&none    &none           &kp UP_ARROW    &none            &none                               &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp MINUS  &kp STAR
+&kp END  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp HOME  &none       &kp KP_DOT    &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PLUS   &kp ENTER
+&none    &none           &none           &none            &none     &none       &kp KP_MINUS  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SLASH  &none
+&trans   &trans          &tog 2          &trans           &trans    &trans      &kp TAB       &kp NUMBER_0                                         &kp BACKSPACE
             >;
         };
 
@@ -155,10 +155,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &mkp MB1  &mkp MB2  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &mkp MB4  &mkp MB5  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                              &trans
+&trans  &trans  &trans  &trans  &trans                        &trans    &trans    &trans    &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans    &trans    &mkp MB1  &mkp MB3  &mkp MB2  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans    &trans    &trans    &trans    &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &mkp MB4  &mkp MB5                                &trans
             >;
         };
 
