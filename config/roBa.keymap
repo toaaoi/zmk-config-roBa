@@ -121,7 +121,7 @@
 &kp Q           &kp W         &kp E             &kp R      &kp T                                                    &kp Y            &kp U  &kp I      &kp O    &kp P
 &kp A           &kp S         &kp D             &kp F      &kp G        &kp LA(LEFT_SHIFT)      &kp LEFT_GUI        &kp H            &kp J  &kp K      &kp L    &lt 5 ENTER
 &kp Z           &kp X         &kp C             &kp V      &kp B        &mkp RCLK               &kp DEL             &kp N            &kp M  &kp COMMA  &kp DOT  &kp MINUS
-&kp LEFT_SHIFT  &kp LEFT_ALT  &kp LEFT_CONTROL  &mkp LCLK  &lt 5 SPACE  &lt 1 F13               &mt LEFT_SHIFT F14  &lt 3 BACKSPACE                             &kp SLASH
+&kp LEFT_SHIFT  &kp LEFT_ALT  &kp LEFT_CONTROL  &mkp LCLK  &lt 5 SPACE  &lt 4 F13               &mt LEFT_SHIFT F14  &lt 3 BACKSPACE                             &kp SLASH
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -129,10 +129,10 @@
 
         FUNCTION {
             bindings = <
-&kp ESC     &kp CARET             &kp HASH       &kp AMPERSAND  &kp PRCNT                            &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp MINUS  &kp STAR
-&kp DELETE  &kp DOLLAR            &kp STAR       &kp AT_SIGN    &kp EXCL   &trans      &kp KP_DOT    &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PLUS   &kp EQUAL
-&none       &kp NON_US_BACKSLASH  &kp LG(LS(T))  &kp LC(F20)    &kp INS    &trans      &kp KP_MINUS  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SLASH  &none
-&tog 4      &trans                &tog 2         &trans         &trans     &trans      &kp TAB       &kp NUMBER_0                                         &kp BACKSPACE
+&kp Q   &kp F   &kp J   &kp G   &kp B                                     &kp P   &kp Y  &kp U      &kp L    &kp SLASH
+&kp X   &kp A   &kp I   &kp T   &kp K   &trans      &trans                &kp W   &kp S  &kp E      &kp O    &kp N
+&kp V   &kp C   &kp Z   &kp H   &kp R   &trans      &trans                &kp M   &kp D  &kp COMMA  &kp DOT  &kp MINUS
+&trans  &trans  &trans  &trans  &trans  &trans      &mt LEFT_SHIFT ENTER  &trans                             &tog 1
             >;
         };
 
@@ -158,10 +158,10 @@
 
         MOUSE {
             bindings = <
-&kp Q   &kp F   &kp J   &kp G   &kp B                                            &kp P            &kp Y  &kp U      &kp L    &kp SLASH
-&kp X   &kp A   &kp I   &kp T   &kp K        &trans       &trans                 &kp W            &kp S  &kp E      &kp O    &kp N
-&kp V   &kp C   &kp Z   &kp H   &kp R        &kp F13      &kp F14                &kp M            &kp D  &kp COMMA  &kp DOT  &kp MINUS
-&trans  &trans  &trans  &trans  &lt 1 SPACE  &trans       &mt RIGHT_SHIFT ENTER  &lt 3 BACKSPACE                             &tog 4
+&kp ESC     &kp CARET             &kp HASH       &kp AMPERSAND  &kp PERCENT                                &kp N7  &kp N8  &kp N9  &kp KP_MINUS  &kp KP_ASTERISK
+&kp DELETE  &kp DOLLAR            &kp ASTERISK   &kp AT_SIGN    &kp EXCLAMATION  &trans      &kp KP_DOT    &kp N4  &kp N5  &kp N6  &kp KP_PLUS   &kp KP_EQUAL
+&none       &kp NON_US_BACKSLASH  &kp LG(LS(T))  &kp LC(F20)    &kp INS          &trans      &kp KP_MINUS  &kp N1  &kp N2  &kp N3  &kp KP_SLASH  &none
+&tog 1      &trans                &tog 2         &trans         &trans           &trans      &kp TAB       &kp N0                                &kp BSPC
             >;
         };
 
